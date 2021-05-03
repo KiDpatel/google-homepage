@@ -1,0 +1,1 @@
+This introductory project from The Odin Project requires the breakdown and rebuilding of an existing web page.
