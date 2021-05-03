@@ -1,4 +1,26 @@
+#search {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "logo logo"
+        "searchbar searchbar"
+        "search-button lucky-button";
+    justify-items: center;    
+}
+
 .logo {
-    display: flex;
-    justify-content: center;
+    grid-area: logo;
+}
+
+.searchbar {
+    grid-area: searchbar;
+}
+
+.search-button {
+    grid-area: search-button;
+}
+
+.lucky-button {
+    grid-area: lucky-button;
 }
