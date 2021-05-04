@@ -9,6 +9,10 @@
     justify-items: center;    
 }
 
+.searchbar {
+    display: flex;
+}
+
 .logo {
     grid-area: logo;
 }
