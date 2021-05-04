@@ -1,6 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    color: black;
+    font-family: arial, sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 #search {
