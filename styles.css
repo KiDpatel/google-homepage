@@ -1,3 +1,8 @@
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
 #search {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -6,7 +11,8 @@
         "logo logo"
         "searchbar searchbar"
         "search-button lucky-button";
-    justify-items: center;    
+    justify-items: center;
+    margin-top: 125px;    
 }
 
 .searchbar {
