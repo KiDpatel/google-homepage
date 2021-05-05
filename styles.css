@@ -63,14 +63,13 @@ a:hover {
 #search {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 70px 1fr;
+    grid-template-rows: 1fr 80px 1fr;
     grid-template-areas: 
         "logo logo"
         "searchbar searchbar"
         "search-button lucky-button";
     justify-items: center;
-    margin-top: 125px;
-    border: 1px solid red;   
+    margin-top: 125px;  
 }
 
 .searchbar {
@@ -79,25 +78,95 @@ a:hover {
 
 .logo {
     grid-area: logo;
-    border: 1px solid black;
 }
 
 .searchbar {
     grid-area: searchbar;
-    padding-top: 20px;
-    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid #f2f2f2;
+    border-radius: 50px;
+    align-self: center;
+    width: 450px;
+    height: 40px;
+}
+
+.searchbar span{
+    color: grey;
+}
+
+.searchbar input {
+    width: 350px;
+    border: none;
+    flex-basis: 1;
+}
+
+.searchbar input:focus {
+    outline: none;
 }
 
 .search-button {
     grid-area: search-button;
     justify-self: end;
     padding-right: 5px;
-    border: 1px solid black; 
+}
+
+.search-button input{
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    color: #5F6368;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    height: 30px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.search-button input:hover{
+    border: 1px solid grey;
+    color: black;
+   
 }
 
 .lucky-button {
     grid-area: lucky-button;
     justify-self: start;
     padding-left: 5px;
-    border: 1px solid black;
+}
+
+.lucky-button input{
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    color: #5F6368;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    border-radius: 4px;
+    height: 30px;
+    text-align: center;
+}
+
+.lucky-button input:hover{
+    color: black;
+    border: 1px solid grey; 
+}
+
+.footer {
+    background-color: #f2f2f2;
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-evenly;
+    height: 40px;
+    width: 100%;
+    bottom: 0;
+    
+}
+
+.footer-space {
+    flex-grow: 1;
+}
+
+.footer div {
+    padding: 0 10px;
 }
