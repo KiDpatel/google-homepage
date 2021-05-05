@@ -52,7 +52,6 @@ a:hover {
 }
 
 .nav-sign-in {
-    color: white;
     flex-basis: 70px;
     padding: 8px 0px 8px 0px;
     background-color: #4285f4;
@@ -64,13 +63,14 @@ a:hover {
 #search {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 70px 1fr;
     grid-template-areas: 
         "logo logo"
         "searchbar searchbar"
         "search-button lucky-button";
     justify-items: center;
-    margin-top: 125px;    
+    margin-top: 125px;
+    border: 1px solid red;   
 }
 
 .searchbar {
@@ -79,16 +79,25 @@ a:hover {
 
 .logo {
     grid-area: logo;
+    border: 1px solid black;
 }
 
 .searchbar {
     grid-area: searchbar;
+    padding-top: 20px;
+    border: 1px solid black;
 }
 
 .search-button {
     grid-area: search-button;
+    justify-self: end;
+    padding-right: 5px;
+    border: 1px solid black; 
 }
 
 .lucky-button {
     grid-area: lucky-button;
+    justify-self: start;
+    padding-left: 5px;
+    border: 1px solid black;
 }
