@@ -1,1 +1,1 @@
-This introductory project from The Odin Project requires the breakdown and rebuilding of an existing web page.
+This introductory project from The Odin Project requires the breakdown and rebuilding of the google search homepage. Through this project I learned how to apply basic html and css skills and got more comfortable using tools such as flexbox and grid. 
